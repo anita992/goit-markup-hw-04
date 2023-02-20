@@ -84,7 +84,10 @@ body {
   margin-left: auto;
   margin-right: 50px;
 }
-
+.item-contact:hover,
+.item-contact:focus {
+  fill: var(--accent-color);
+}
 .menu > .item:not(:last-child) {
   margin-right: 46px;
 }
@@ -98,12 +101,10 @@ body {
 }
 .header-icon {
   display: flex;
-  fill: var(--secondary-color);
+
   margin-right: 10px;
 }
-.header-icon:hover {
-  fill: var(--accent-color);
-}
+
 .index-background {
   text-align: center;
 }
@@ -112,14 +113,7 @@ body {
   display: flex;
   gap: 30px;
 }
-.card-set-icon {
-  background-color: var(--button-color);
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .button-set {
   display: flex;
   flex-direction: row;
@@ -127,6 +121,7 @@ body {
   gap: 8px;
   margin-bottom: 50px;
 }
+
 .padding-flex {
   padding-bottom: 0;
 }
@@ -201,15 +196,19 @@ button:focus {
   border-radius: 4px;
   padding: 6px 22px;
 }
+.buttons-category:hover,
+.buttons-category:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
 .item-icon {
   background-color: var(--button-color);
   border-radius: 4px;
-  max-width: 270px;
-  max-height: 120px;
-  display: flex;
-  text-align: center;
+  display: inline-block;
+  width: 270px;
+  height: 120px;
 }
-
 .text-title {
   font-weight: 700;
   font-size: 14px;
@@ -264,18 +263,26 @@ button:focus {
 .card {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
   overflow: hidden;
   background-color: var(--third-color);
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .cards-portfolio {
   max-width: 400px;
   margin: 0;
   border-radius: 4px;
   overflow: hidden;
   background-color: var(--third-color);
+}
+.cards-portfolio:hover,
+.cards-portfolio:focus {
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .card-image {
@@ -332,12 +339,17 @@ button:focus {
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
 }
-.clients-icon:hover {
-  --color2: #2196f3;
-  border-color: #2196f3;
+.clients-icon:hover,
+.clients-icon:focus-visible {
+  --color2: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
 }
 .contact-link {
   color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .icon-social {
@@ -348,11 +360,13 @@ button:focus {
 }
 .team-icon {
   border-radius: 4px;
-  fill: #ffffff;
+  fill: var(--third-color);
 }
-.team-icon:hover {
-  fill: #2196f3;
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--accent-color);
   --color2: var(--third-color);
+  cursor: pointer;
 }
 .accent {
   color: var(--accent-color);
@@ -434,9 +448,11 @@ button:focus {
 .footer-icon {
   fill: rgba(255, 255, 255, 0.1);
 }
-.footer-icon:hover {
-  fill: #2196f3;
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: var(--accent-color);
   --color2: var(--third-color);
+  cursor: pointer;
 }
 
 .address a {
