@@ -39,7 +39,12 @@ body {
   background-color: var(--footbar-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url("./images/background.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/img-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px;
@@ -106,6 +111,14 @@ body {
 .card-set {
   display: flex;
   gap: 30px;
+}
+.card-set-icon {
+  background-color: var(--button-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .button-set {
   display: flex;
@@ -188,6 +201,14 @@ button:focus {
   border-radius: 4px;
   padding: 6px 22px;
 }
+.item-icon {
+  background-color: var(--button-color);
+  border-radius: 4px;
+  max-width: 270px;
+  max-height: 120px;
+  display: flex;
+  text-align: center;
+}
 
 .text-title {
   font-weight: 700;
@@ -196,6 +217,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .text {
@@ -223,6 +245,7 @@ button:focus {
   color: var(--main-color);
   margin-bottom: 50px;
 }
+
 .team-background {
   background-color: var(--button-color);
 }
@@ -286,11 +309,51 @@ button:focus {
   text-align: center;
   padding-bottom: 30px;
 }
-
+.clients {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+.clients-set {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.clients-icon {
+  box-sizing: border-box;
+  display: flex;
+  width: 167px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+.clients-icon:hover {
+  --color2: #2196f3;
+  border-color: #2196f3;
+}
 .contact-link {
   color: var(--secondary-color);
 }
 
+.icon-social {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-bottom: 40px;
+}
+.team-icon {
+  border-radius: 4px;
+  fill: #ffffff;
+}
+.team-icon:hover {
+  fill: #2196f3;
+  --color2: var(--third-color);
+}
 .accent {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -328,9 +391,27 @@ button:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  background: var(--footbar-background-color);
-}
 
+  background: var(--footbar-background-color);
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 70px;
+}
+.footbar-elements {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+.footbar-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding-left: 0;
+}
+.social-text {
+  color: var(--third-color);
+  margin-bottom: 20px;
+}
 .logo-word {
   color: var(--third-color);
 }
@@ -345,6 +426,17 @@ button:focus {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-bottom: 20px;
+}
+.icon-social-footer {
+  display: flex;
+  gap: 10px;
+}
+.footer-icon {
+  fill: rgba(255, 255, 255, 0.1);
+}
+.footer-icon:hover {
+  fill: #2196f3;
+  --color2: var(--third-color);
 }
 
 .address a {
