@@ -101,6 +101,7 @@ body {
 }
 .header-icon {
   display: flex;
+
   margin-right: 10px;
 }
 
@@ -160,7 +161,6 @@ body {
 .nav-link:focus,
 .accent {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .button-index {
@@ -216,7 +216,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .text {
@@ -232,6 +232,7 @@ button:focus {
   gap: 30px;
 }
 .project-item {
+  border-bottom: 1px solid var(--border-color);
   flex-basis: calc((100% - 60px) / 3);
 }
 .profession {
@@ -263,16 +264,12 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-}
-.workers-information {
-  display: flex;
-  padding: 30px 32px;
-  flex-direction: column;
   background-color: var(--third-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .cards-portfolio {
   max-width: 400px;
   margin: 0;
@@ -307,8 +304,8 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
-
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .workers-profession {
@@ -317,7 +314,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 .clients {
   text-align: center;
@@ -350,7 +347,6 @@ button:focus {
 }
 .contact-link {
   color: var(--secondary-color);
-  fill: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -358,8 +354,9 @@ button:focus {
 
 .icon-social {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: space-evenly;
+
+  padding-bottom: 40px;
 }
 .team-icon {
   border-radius: 4px;
@@ -382,9 +379,6 @@ button:focus {
 }
 .card-body {
   padding: 20px 24px;
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
 }
 .project-name {
   font-weight: 700;
