@@ -352,13 +352,13 @@ button:focus {
   color: var(--secondary-color);
   fill: var(--secondary-color);
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
 }
 
 .icon-social {
   display: flex;
-  justify-content: space-between;
+
   gap: 10px;
 }
 .team-icon {
